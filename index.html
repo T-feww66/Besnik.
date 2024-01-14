@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./assets/css/reset.css" />
+        <link rel="stylesheet" href="./assets/css/style.css" />
+        <!-- link google font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+            rel="stylesheet"
+        />
+        <!-- icon -->
+        <link
+            href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+            rel="stylesheet"
+        />
+        <title>Document</title>
+    </head>
+    <body style="height: 6000px">
+        <header class="header fixed">
+            <div class="main-content">
+                <div class="content">
+                    <img
+                        src="./assets/img/icon/besnik..svg"
+                        alt="Besnik."
+                        class="logo"
+                    />
+                    <nav class="nav">
+                        <ul class="nav-list">
+                            <li class="active"><a href="#!">Home</a></li>
+                            <li><a href="#!">Features</a></li>
+                            <li><a href="#!">Pricing</a></li>
+                            <li><a href="#!">About</a></li>
+                            <li><a href="#!">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <div class="actions">
+                        <a href="#!">Sign in</a>
+                        <a href="#!" class="btn header-btn">Sign up</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="hero">
+                <div class="main-content">
+                    <div class="body">
+                        <!-- body left -->
+                        <div class="info">
+                            <p class="title">😎 EASY LEAENING PLATFORM</p>
+                            <h1 class="heading">Words learner come here.</h1>
+                            <p class="desc">
+                                Build skills with courses, certificates, and get
+                                online knowledge from our world-class platform.
+                            </p>
+                            <div class="cta">
+                                <a href="#!" class="btn hero-btn"
+                                    >Get Started</a
+                                >
+                                <button class="watch">
+                                    <img
+                                        src="./assets/img/icon/plays.svg"
+                                        alt=""
+                                    />
+                                </button>
+                            </div>
+                        </div>
+                        <!-- body right -->
+                        <div class="intro">
+                            <img
+                                src="./assets/img/images/hero-img.avif"
+                                alt="Words learner come here."
+                                class="img-intro"
+                            />
+                            <div class="course center">
+                                <i class="bx bx-book-alt icon"></i
+                                ><span>Courses 1000+</span>
+                            </div>
+                            <div class="schedules center">
+                                <span>Schedules</span
+                                ><i class="bx bx-signal-5 icon"></i>
+                            </div>
+                            <div class="student center">
+                                <span>Our Active Students</span>
+                                <div class="avatars">
+                                    <img
+                                        src="./assets/img/images/avatar-1.avif"
+                                        alt=""
+                                        class="avatar"
+                                    />
+                                    <img
+                                        src="./assets/img/images/avatar-2.avif"
+                                        alt=""
+                                        class="avatar"
+                                    />
+                                    <img
+                                        src="./assets/img/images/avatar-3.avif"
+                                        alt=""
+                                        class="avatar"
+                                    />
+                                    <img
+                                        src="./assets/img/images/avatar-4.avif"
+                                        alt=""
+                                        class="avatar"
+                                    />
+                                    <div class="avatar number-avatar">10K+</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <script>
+            var $ = document.querySelector.bind(document);
+            var $$ = document.querySelectorAll.bind(document);
+
+            var listLis = $$(".nav-list li");
+            console.log(listLis);
+            listLis.forEach((li) => {
+                li.onclick = function () {
+                    $(".nav-list li.active").classList.remove("active");
+                    this.classList.add("active");
+                };
+            });
+        </script>
+    </body>
+</html>
