@@ -341,8 +341,8 @@ a {
 
 /* courses */
 .course {
-    padding: 65px 0;
-    margin-top: 65px;
+    padding: 35px 0;
+    margin-top: 30px;
 }
 
 .course .heading {
@@ -437,4 +437,138 @@ a {
     width: 6px;
     height: 6px;
     margin-right: 10px;
+}
+
+/* trend */
+.trend {
+    margin-top: 290px;
+    padding: 65px 0;
+}
+
+.trend .body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    width: 862px;
+}
+
+.trend strong {
+    color: #0d1111;
+    font-size: 6.2rem;
+    font-weight: 700;
+}
+
+.trend .desc {
+    margin-top: 11px;
+    line-height: normal;
+}
+
+/* padding 65px */
+/* feedback */
+.feedback {
+    padding: 65px 0;
+    margin-top: 135px;
+}
+
+.feedback .body {
+    display: flex;
+    gap: 0px 72px;
+}
+
+.feedback .info {
+    padding: 37px 0;
+    width: 36%;
+}
+
+.feedback .info .desc-top {
+    margin-top: 27px;
+    color: #5d6564;
+    font-size: 32px;
+    line-height: 1.5;
+}
+
+.feedback .info span {
+    color: #070707;
+    font-weight: 500;
+}
+
+.feedback .info .desc {
+    margin-top: 33px;
+    line-height: normal;
+    font-size: 1.6rem;
+}
+
+.feedback .controls {
+    margin-top: 52px;
+    display: flex;
+    gap: 0 30px;
+}
+
+.feedback .ctrl {
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all ease 0.25s; 
+}
+
+.feedback .ctrl:hover {
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    background-color: #fff;
+}
+
+.feedback .avatars {
+    position: relative;
+    width: 58%;
+}
+
+.feedback .avatar-feedback {
+    position: absolute;
+    object-fit: cover;
+    width: 78px;
+    height: 78px;
+    border-radius: 50%;
+}
+
+.feedback .avatar-feedback:first-child {
+    top: 22%;
+    left: 40%;
+    width: 235px;
+    height: 235px;
+}
+
+.feedback .avatar-feedback:nth-child(2) {
+    top: 0;
+    left: 21%;
+    width: 92px;
+    height: 92px;
+}
+
+.feedback .avatar-feedback:nth-child(3) {
+    top: 4%;
+    right: 0;
+    width: 110px;
+    height: 110px;
+}
+
+.feedback .avatar-feedback:nth-child(4) {
+    bottom: 30%;
+    left: 0;
+}
+
+.feedback .avatar-feedback:nth-child(5) {
+    bottom: 0;
+    left: 31%;
+}
+
+.feedback .avatar-feedback:nth-child(6) {
+    bottom: 6%;
+    right: 4.7%;
 }
